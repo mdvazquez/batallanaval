@@ -20,9 +20,6 @@
                     <img alt="Computadora" src="images\computadora.jpg">
                 </div>
             </div>
-        </div>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
-</html>
+<?php 
+require 'footer.php';
+?>
