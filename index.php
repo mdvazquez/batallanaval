@@ -1,5 +1,5 @@
 <?php
-    require 'header.php';
+    require_once 'header.php';
 ?>
             <div class="row">
                 <div class="col-md-6">
