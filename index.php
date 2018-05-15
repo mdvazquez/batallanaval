@@ -1,5 +1,8 @@
 <?php
     require_once 'header.php';
+    require_once './clases/AlineacionBarcos.php';
+    $nuevaAlineacion = new app\clases\AlineacionBarcos();
+    $alineacionesPosibles = $nuevaAlineacion->getAlineacionesPosibles();
 ?>
             <div class="row">
                 <div class="col-md-6">
@@ -34,13 +37,12 @@
                                 </td>
                                 <td>
                                     <select name="OS">
-
-                                        <option value="1">
-                                            Horizontal
-                                        </option> 
-                                        <option value="2">
-                                            Vertical
-                                        </option>
+                                        <?php
+                                           foreach($alineacionesPosibles as $alineacion)
+                                           {
+                                            echo "<option>$alineacion</option>";
+                                           }
+                                        ?>
                                     </select>
                                 </td>
                             </tr>
@@ -57,13 +59,12 @@
                                 </td>
                                 <td>
                                     <select name="OS">
-
-                                        <option value="1">
-                                            Horizontal
-                                        </option> 
-                                        <option value="2">
-                                            Vertical
-                                        </option>
+                                        <?php
+                                           foreach($alineacionesPosibles as $alineacion)
+                                           {
+                                            echo "<option>$alineacion</option>";
+                                           }
+                                        ?>
                                     </select>
                                 </td>
                             </tr>
@@ -80,13 +81,12 @@
                                 </td>
                                 <td>
                                     <select name="OS">
-
-                                        <option value="1">
-                                            Horizontal
-                                        </option> 
-                                        <option value="2">
-                                            Vertical
-                                        </option>
+                                        <?php
+                                           foreach($alineacionesPosibles as $alineacion)
+                                           {
+                                            echo "<option>$alineacion</option>";
+                                           }
+                                        ?>
                                     </select>
                                 </td>
                             </tr>
@@ -103,13 +103,12 @@
                                 </td>
                                 <td>
                                     <select name="OS">
-
-                                        <option value="1">
-                                            Horizontal
-                                        </option> 
-                                        <option value="2">
-                                            Vertical
-                                        </option>
+                                        <?php
+                                           foreach($alineacionesPosibles as $alineacion)
+                                           {
+                                            echo "<option>$alineacion</option>";
+                                           }
+                                        ?>
                                     </select>
                                 </td>
                             </tr>
@@ -126,13 +125,12 @@
                                 </td>
                                 <td>
                                     <select name="OS">
-
-                                        <option value="1">
-                                            Horizontal
-                                        </option> 
-                                        <option value="2">
-                                            Vertical
-                                        </option>
+                                        <?php
+                                           foreach($alineacionesPosibles as $alineacion)
+                                           {
+                                            echo "<option>$alineacion</option>";
+                                           }
+                                        ?>
                                     </select>
                                 </td>
                             </tr>
