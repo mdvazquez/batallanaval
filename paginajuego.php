@@ -1,12 +1,36 @@
 <?php
     require_once 'header.php';
+    require_once './clases/Tablero.php';
+    $tableroJuego = new app\clases\Tablero();
+    $dimensiones = $tableroJuego->getDimensiones();
+    //dimensiones tiene una forma de [filas, columnas]
 ?>
             <div class="row">
                 <div class="col-md-6">  
-                    <img class="dummy" alt="Bootstrap Image Preview" src="images\grilla.jpg">
+                    <table id='tabla_jugador'>
+                        <?php
+                          for($filas =0; $filas<$dimensiones[0]; $filas++){
+                            echo "<tr>";
+                                for($columnas =0; $columnas<$dimensiones[1]; $columnas++){
+                                    echo "<td>$filas,$columnas</td>";
+                                }
+                            echo "</tr>";
+                          }
+                        ?>
+                    </table>
                 </div>
                 <div class="col-md-6">
-                    <img class="dummy" alt="Bootstrap Image Preview" src="images\grilla.jpg">
+                    <table id='tabla_oponente'>
+                        <?php
+                          for($filas =0; $filas<$dimensiones[0]; $filas++){
+                            echo "<tr>";
+                                for($columnas =0; $columnas<$dimensiones[1]; $columnas++){
+                                    echo "<td>$filas,$columnas</td>";
+                                }
+                            echo "</tr>";
+                          }
+                        ?>
+                    </table>
                 </div>
             </div>
             <div class="row">
